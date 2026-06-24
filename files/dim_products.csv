@@ -1,0 +1,361 @@
+product_id,product_name,category,sub_category,brand,mrp,weight_kg,launch_date
+50000,Boat Cameras 611,Electronics,Cameras,Boat,1809,1.92,2023-10-10
+50001,Samsung Cameras 689,Electronics,Cameras,Samsung,9774,10.26,2023-11-15
+50002,Realme Headphones 783,Electronics,Headphones,Realme,49671,8.45,2022-10-20
+50003,Samsung Televisions 208,Electronics,Televisions,Samsung,17388,0.75,2023-07-08
+50004,Xiaomi Televisions 768,Electronics,Televisions,Xiaomi,42570,11.39,2023-05-24
+50005,HP Headphones 219,Electronics,Headphones,HP,58518,10.55,2024-05-30
+50006,Dell Smartphones 236,Electronics,Smartphones,Dell,52902,1.45,2024-09-03
+50007,HP Cameras 431,Electronics,Cameras,HP,2295,5.5,2022-12-20
+50008,Xiaomi Laptops 993,Electronics,Laptops,Xiaomi,1188,10.53,2025-04-05
+50009,HP Headphones 297,Electronics,Headphones,HP,3744,5.14,2024-06-11
+50010,Boat Headphones 800,Electronics,Headphones,Boat,1116,11.96,2024-06-30
+50011,Sony Smartwatches 453,Electronics,Smartwatches,Sony,5949,1.2,2024-11-07
+50012,OnePlus Laptops 488,Electronics,Laptops,OnePlus,9927,6.56,2024-05-03
+50013,Dell Smartphones 124,Electronics,Smartphones,Dell,2880,0.51,2022-03-24
+50014,Xiaomi Televisions 826,Electronics,Televisions,Xiaomi,13518,10.65,2022-02-07
+50015,LG Smartwatches 238,Electronics,Smartwatches,LG,6354,4.85,2022-04-24
+50016,Apple Smartwatches 537,Electronics,Smartwatches,Apple,52641,2.75,2022-06-08
+50017,OnePlus Smartphones 925,Electronics,Smartphones,OnePlus,1953,0.65,2022-07-21
+50018,Samsung Headphones 828,Electronics,Headphones,Samsung,2385,6.31,2021-06-23
+50019,LG Smartwatches 161,Electronics,Smartwatches,LG,5184,10.28,2025-02-20
+50020,Xiaomi Smartphones 614,Electronics,Smartphones,Xiaomi,1251,1.05,2021-07-18
+50021,Samsung Televisions 541,Electronics,Televisions,Samsung,38358,2.94,2023-06-05
+50022,Apple Televisions 159,Electronics,Televisions,Apple,27765,1.44,2024-03-08
+50023,LG Smartphones 974,Electronics,Smartphones,LG,15948,4.53,2021-10-27
+50024,Samsung Headphones 673,Electronics,Headphones,Samsung,11646,1.72,2021-02-08
+50025,Sony Cameras 859,Electronics,Cameras,Sony,2547,10.03,2023-07-20
+50026,Boat Smartwatches 980,Electronics,Smartwatches,Boat,81738,1.59,2022-02-07
+50027,Apple Smartphones 176,Electronics,Smartphones,Apple,15471,4.62,2023-11-15
+50028,OnePlus Headphones 470,Electronics,Headphones,OnePlus,76455,9.16,2023-08-08
+50029,Apple Headphones 875,Electronics,Headphones,Apple,1908,0.05,2023-06-26
+50030,Samsung Laptops 717,Electronics,Laptops,Samsung,5346,4.13,2021-08-14
+50031,Samsung Televisions 320,Electronics,Televisions,Samsung,4338,0.11,2023-05-15
+50032,Sony Televisions 358,Electronics,Televisions,Sony,1791,7.71,2021-06-25
+50033,Realme Laptops 395,Electronics,Laptops,Realme,3411,3.0,2022-04-14
+50034,HP Laptops 264,Electronics,Laptops,HP,2466,5.37,2025-01-15
+50035,Xiaomi Smartwatches 186,Electronics,Smartwatches,Xiaomi,2133,7.7,2024-08-21
+50036,LG Laptops 795,Electronics,Laptops,LG,19395,3.95,2022-11-06
+50037,HP Smartwatches 823,Electronics,Smartwatches,HP,28269,8.67,2024-07-27
+50038,Apple Laptops 479,Electronics,Laptops,Apple,3717,1.21,2024-12-05
+50039,Boat Cameras 103,Electronics,Cameras,Boat,1305,11.18,2022-04-01
+50040,LG Smartphones 406,Electronics,Smartphones,LG,13005,6.87,2025-04-15
+50041,Dell Laptops 641,Electronics,Laptops,Dell,19593,5.55,2023-12-23
+50042,Apple Televisions 981,Electronics,Televisions,Apple,24156,5.13,2024-01-31
+50043,Apple Cameras 482,Electronics,Cameras,Apple,7110,11.89,2024-08-25
+50044,Realme Cameras 433,Electronics,Cameras,Realme,5220,5.2,2025-07-11
+50045,Samsung Smartphones 829,Electronics,Smartphones,Samsung,11151,7.94,2022-10-21
+50046,Xiaomi Smartwatches 746,Electronics,Smartwatches,Xiaomi,27612,3.19,2021-02-07
+50047,LG Smartwatches 854,Electronics,Smartwatches,LG,16236,1.68,2021-03-23
+50048,Xiaomi Televisions 139,Electronics,Televisions,Xiaomi,9225,5.02,2024-08-01
+50049,Realme Headphones 513,Electronics,Headphones,Realme,2061,11.88,2025-07-23
+50050,Sony Smartphones 602,Electronics,Smartphones,Sony,9756,2.27,2022-06-11
+50051,Xiaomi Laptops 455,Electronics,Laptops,Xiaomi,21942,3.51,2022-10-21
+50052,Samsung Televisions 129,Electronics,Televisions,Samsung,47205,9.01,2023-06-04
+50053,Apple Headphones 322,Electronics,Headphones,Apple,15363,1.91,2025-03-15
+50054,Sony Cameras 275,Electronics,Cameras,Sony,23841,5.26,2022-10-03
+50055,Boat Headphones 607,Electronics,Headphones,Boat,2763,1.79,2022-04-14
+50056,Sony Cameras 536,Electronics,Cameras,Sony,1764,3.77,2024-12-22
+50057,Boat Laptops 916,Electronics,Laptops,Boat,7290,5.9,2023-02-23
+50058,Dell Televisions 416,Electronics,Televisions,Dell,2880,0.95,2023-01-16
+50059,Boat Cameras 853,Electronics,Cameras,Boat,21096,6.81,2021-05-25
+50060,Biba Sarees 133,Fashion,Sarees,Biba,585,9.51,2022-12-26
+50061,HRX Men's T-Shirts 942,Fashion,Men's T-Shirts,HRX,477,11.56,2022-03-11
+50062,Biba Footwear 849,Fashion,Footwear,Biba,963,2.5,2021-10-24
+50063,Puma Footwear 920,Fashion,Footwear,Puma,909,11.04,2022-05-17
+50064,Biba Sarees 533,Fashion,Sarees,Biba,495,2.98,2025-06-03
+50065,Bata Men's T-Shirts 148,Fashion,Men's T-Shirts,Bata,531,8.47,2024-01-25
+50066,Puma Watches 167,Fashion,Watches,Puma,3258,9.62,2021-11-11
+50067,Roadster Footwear 514,Fashion,Footwear,Roadster,414,2.69,2024-10-16
+50068,Titan Jeans 131,Fashion,Jeans,Titan,414,8.74,2021-04-28
+50069,Levis Jeans 774,Fashion,Jeans,Levis,1989,0.76,2021-11-22
+50070,Allen Solly Footwear 450,Fashion,Footwear,Allen Solly,729,1.09,2024-07-10
+50071,Bata Sarees 553,Fashion,Sarees,Bata,1539,11.62,2024-08-19
+50072,Fabindia Women's Kurtas 746,Fashion,Women's Kurtas,Fabindia,3762,11.15,2023-05-01
+50073,Nike Sarees 218,Fashion,Sarees,Nike,4968,9.56,2023-12-30
+50074,Bata Women's Kurtas 350,Fashion,Women's Kurtas,Bata,1926,11.58,2024-07-23
+50075,Levis Watches 568,Fashion,Watches,Levis,1314,1.98,2024-12-05
+50076,Allen Solly Footwear 723,Fashion,Footwear,Allen Solly,477,10.19,2021-05-11
+50077,Fabindia Men's T-Shirts 240,Fashion,Men's T-Shirts,Fabindia,2295,10.16,2024-12-29
+50078,Nike Men's T-Shirts 721,Fashion,Men's T-Shirts,Nike,549,6.09,2021-08-25
+50079,Titan Men's T-Shirts 539,Fashion,Men's T-Shirts,Titan,2277,7.22,2025-02-06
+50080,Levis Sarees 877,Fashion,Sarees,Levis,954,1.36,2024-06-06
+50081,Titan Jeans 861,Fashion,Jeans,Titan,594,6.97,2024-12-15
+50082,Puma Women's Kurtas 492,Fashion,Women's Kurtas,Puma,693,11.49,2023-02-05
+50083,Titan Women's Kurtas 770,Fashion,Women's Kurtas,Titan,1215,4.58,2024-12-07
+50084,Puma Women's Kurtas 235,Fashion,Women's Kurtas,Puma,864,8.58,2023-02-22
+50085,Bata Jeans 891,Fashion,Jeans,Bata,3924,5.45,2021-06-08
+50086,Levis Footwear 958,Fashion,Footwear,Levis,1890,8.74,2025-07-02
+50087,Puma Jeans 794,Fashion,Jeans,Puma,2169,11.04,2025-03-30
+50088,Allen Solly Men's T-Shirts 345,Fashion,Men's T-Shirts,Allen Solly,1107,6.02,2024-08-21
+50089,Fabindia Footwear 556,Fashion,Footwear,Fabindia,4347,5.69,2021-06-24
+50090,Fabindia Jeans 567,Fashion,Jeans,Fabindia,1899,1.59,2025-04-13
+50091,Bata Sarees 488,Fashion,Sarees,Bata,909,2.51,2023-11-30
+50092,Titan Footwear 892,Fashion,Footwear,Titan,2250,0.67,2023-02-18
+50093,Nike Women's Kurtas 355,Fashion,Women's Kurtas,Nike,2259,2.49,2024-12-04
+50094,Levis Footwear 361,Fashion,Footwear,Levis,3609,5.58,2022-03-06
+50095,Allen Solly Jeans 692,Fashion,Jeans,Allen Solly,3573,9.05,2022-09-13
+50096,HRX Jeans 347,Fashion,Jeans,HRX,3627,1.58,2023-06-03
+50097,Nike Sarees 222,Fashion,Sarees,Nike,621,7.53,2022-12-14
+50098,Fabindia Sarees 640,Fashion,Sarees,Fabindia,522,9.12,2022-10-04
+50099,Allen Solly Footwear 600,Fashion,Footwear,Allen Solly,549,9.77,2021-02-06
+50100,HRX Sarees 102,Fashion,Sarees,HRX,630,6.32,2021-07-01
+50101,HRX Men's T-Shirts 965,Fashion,Men's T-Shirts,HRX,2385,2.54,2023-12-17
+50102,Biba Footwear 116,Fashion,Footwear,Biba,630,9.11,2022-12-18
+50103,Puma Jeans 580,Fashion,Jeans,Puma,4392,1.93,2023-06-04
+50104,Puma Men's T-Shirts 889,Fashion,Men's T-Shirts,Puma,621,8.31,2021-07-23
+50105,Fabindia Men's T-Shirts 701,Fashion,Men's T-Shirts,Fabindia,1413,9.41,2024-03-27
+50106,Roadster Women's Kurtas 202,Fashion,Women's Kurtas,Roadster,405,4.77,2022-04-28
+50107,Puma Men's T-Shirts 469,Fashion,Men's T-Shirts,Puma,531,5.33,2025-04-25
+50108,HRX Women's Kurtas 638,Fashion,Women's Kurtas,HRX,4041,4.69,2023-06-05
+50109,Titan Men's T-Shirts 868,Fashion,Men's T-Shirts,Titan,810,6.92,2025-01-21
+50110,Puma Watches 853,Fashion,Watches,Puma,3978,9.76,2023-12-03
+50111,Levis Sarees 720,Fashion,Sarees,Levis,549,5.65,2022-03-01
+50112,Biba Men's T-Shirts 365,Fashion,Men's T-Shirts,Biba,2637,3.45,2021-07-11
+50113,Puma Sarees 699,Fashion,Sarees,Puma,738,8.97,2022-03-27
+50114,Puma Watches 558,Fashion,Watches,Puma,2385,8.57,2024-10-06
+50115,Levis Sarees 742,Fashion,Sarees,Levis,2484,3.24,2022-07-19
+50116,Titan Men's T-Shirts 324,Fashion,Men's T-Shirts,Titan,3420,8.84,2022-09-01
+50117,Nike Jeans 460,Fashion,Jeans,Nike,3519,7.31,2024-09-20
+50118,Nike Watches 203,Fashion,Watches,Nike,1575,0.59,2023-09-06
+50119,Allen Solly Sarees 321,Fashion,Sarees,Allen Solly,1080,4.2,2023-04-03
+50120,Pigeon Storage 880,Home & Kitchen,Storage,Pigeon,1980,8.83,2025-08-13
+50121,Borosil Cookware 328,Home & Kitchen,Cookware,Borosil,14679,7.93,2025-03-26
+50122,Prestige Home Decor 334,Home & Kitchen,Home Decor,Prestige,24039,7.99,2022-09-10
+50123,Pigeon Furniture 862,Home & Kitchen,Furniture,Pigeon,522,0.2,2022-07-07
+50124,Bajaj Storage 436,Home & Kitchen,Storage,Bajaj,2043,7.06,2021-11-09
+50125,Borosil Storage 620,Home & Kitchen,Storage,Borosil,1053,10.54,2022-03-26
+50126,Pigeon Mixers & Grinders 947,Home & Kitchen,Mixers & Grinders,Pigeon,333,0.61,2025-03-09
+50127,Philips Storage 806,Home & Kitchen,Storage,Philips,3303,1.82,2024-07-16
+50128,Milton Storage 234,Home & Kitchen,Storage,Milton,7632,5.66,2021-12-14
+50129,Pigeon Storage 289,Home & Kitchen,Storage,Pigeon,4725,3.68,2024-07-09
+50130,Borosil Cookware 139,Home & Kitchen,Cookware,Borosil,1827,2.67,2022-08-30
+50131,Nilkamal Cookware 372,Home & Kitchen,Cookware,Nilkamal,25029,0.37,2021-11-18
+50132,Bajaj Cookware 346,Home & Kitchen,Cookware,Bajaj,387,11.91,2022-05-11
+50133,Philips Furniture 503,Home & Kitchen,Furniture,Philips,342,2.1,2023-05-03
+50134,Prestige Home Decor 554,Home & Kitchen,Home Decor,Prestige,3483,8.93,2021-02-28
+50135,Borosil Furniture 929,Home & Kitchen,Furniture,Borosil,747,6.24,2021-09-21
+50136,Milton Storage 131,Home & Kitchen,Storage,Milton,11952,6.74,2025-06-28
+50137,Pigeon Cookware 876,Home & Kitchen,Cookware,Pigeon,864,2.92,2022-05-16
+50138,Pigeon Cookware 243,Home & Kitchen,Cookware,Pigeon,378,4.6,2024-09-27
+50139,Pigeon Home Decor 887,Home & Kitchen,Home Decor,Pigeon,486,2.8,2023-09-20
+50140,Bajaj Cookware 206,Home & Kitchen,Cookware,Bajaj,1188,11.33,2021-07-05
+50141,Bajaj Home Decor 617,Home & Kitchen,Home Decor,Bajaj,5688,6.05,2024-05-05
+50142,Philips Storage 728,Home & Kitchen,Storage,Philips,15381,6.41,2022-05-16
+50143,Philips Mixers & Grinders 489,Home & Kitchen,Mixers & Grinders,Philips,3816,7.52,2022-09-01
+50144,Bajaj Cookware 971,Home & Kitchen,Cookware,Bajaj,7839,11.52,2022-12-06
+50145,Pigeon Furniture 773,Home & Kitchen,Furniture,Pigeon,3735,2.18,2023-11-04
+50146,Bajaj Furniture 103,Home & Kitchen,Furniture,Bajaj,783,11.6,2023-08-19
+50147,Borosil Mixers & Grinders 328,Home & Kitchen,Mixers & Grinders,Borosil,2475,8.33,2024-02-21
+50148,Bajaj Home Decor 998,Home & Kitchen,Home Decor,Bajaj,9756,4.22,2025-08-05
+50149,Milton Storage 183,Home & Kitchen,Storage,Milton,819,4.76,2022-11-16
+50150,Prestige Home Decor 344,Home & Kitchen,Home Decor,Prestige,432,1.96,2025-08-25
+50151,Pigeon Mixers & Grinders 878,Home & Kitchen,Mixers & Grinders,Pigeon,423,2.69,2023-11-02
+50152,Prestige Home Decor 742,Home & Kitchen,Home Decor,Prestige,297,3.12,2023-04-29
+50153,Bajaj Home Decor 985,Home & Kitchen,Home Decor,Bajaj,432,1.55,2021-11-06
+50154,Nilkamal Furniture 320,Home & Kitchen,Furniture,Nilkamal,12294,3.24,2025-05-18
+50155,Pigeon Home Decor 102,Home & Kitchen,Home Decor,Pigeon,837,5.16,2022-02-28
+50156,Prestige Storage 676,Home & Kitchen,Storage,Prestige,16254,7.02,2025-08-11
+50157,Milton Furniture 708,Home & Kitchen,Furniture,Milton,5949,0.77,2024-02-01
+50158,Borosil Storage 812,Home & Kitchen,Storage,Borosil,3366,3.19,2022-01-16
+50159,Prestige Home Decor 813,Home & Kitchen,Home Decor,Prestige,6021,4.66,2022-07-10
+50160,Mamaearth Fragrances 285,Beauty & Personal Care,Fragrances,Mamaearth,1701,4.1,2023-10-08
+50161,Dove Fragrances 164,Beauty & Personal Care,Fragrances,Dove,139,0.36,2021-01-26
+50162,Philips Grooming 693,Beauty & Personal Care,Grooming,Philips,378,11.87,2024-06-15
+50163,Wow Skin Science Fragrances 568,Beauty & Personal Care,Fragrances,Wow Skin Science,684,4.55,2022-05-10
+50164,Dove Skincare 808,Beauty & Personal Care,Skincare,Dove,2700,5.12,2023-07-11
+50165,Lakme Makeup 222,Beauty & Personal Care,Makeup,Lakme,2106,10.2,2022-07-10
+50166,Lakme Grooming 824,Beauty & Personal Care,Grooming,Lakme,1224,5.75,2024-09-05
+50167,Lakme Skincare 430,Beauty & Personal Care,Skincare,Lakme,1854,3.88,2021-01-19
+50168,Dove Fragrances 714,Beauty & Personal Care,Fragrances,Dove,531,1.69,2023-12-27
+50169,Nivea Haircare 132,Beauty & Personal Care,Haircare,Nivea,2160,5.52,2024-01-08
+50170,Dove Makeup 633,Beauty & Personal Care,Makeup,Dove,2133,9.9,2023-04-19
+50171,Lakme Makeup 946,Beauty & Personal Care,Makeup,Lakme,423,10.64,2021-02-15
+50172,Dove Haircare 505,Beauty & Personal Care,Haircare,Dove,594,0.75,2023-09-29
+50173,Philips Skincare 510,Beauty & Personal Care,Skincare,Philips,1701,3.39,2022-09-19
+50174,Nivea Fragrances 748,Beauty & Personal Care,Fragrances,Nivea,149,6.7,2023-04-24
+50175,Lakme Grooming 980,Beauty & Personal Care,Grooming,Lakme,918,1.51,2023-03-28
+50176,Nivea Haircare 249,Beauty & Personal Care,Haircare,Nivea,621,6.4,2023-01-14
+50177,Dove Makeup 239,Beauty & Personal Care,Makeup,Dove,169,10.28,2021-09-17
+50178,Lakme Grooming 663,Beauty & Personal Care,Grooming,Lakme,936,10.08,2021-03-07
+50179,Wow Skin Science Fragrances 662,Beauty & Personal Care,Fragrances,Wow Skin Science,1827,5.42,2023-06-12
+50180,Nivea Grooming 476,Beauty & Personal Care,Grooming,Nivea,450,1.6,2022-10-29
+50181,Nivea Haircare 131,Beauty & Personal Care,Haircare,Nivea,468,3.34,2022-06-29
+50182,Wow Skin Science Skincare 824,Beauty & Personal Care,Skincare,Wow Skin Science,801,6.54,2024-02-06
+50183,Philips Fragrances 188,Beauty & Personal Care,Fragrances,Philips,1584,11.73,2023-02-26
+50184,Mamaearth Skincare 812,Beauty & Personal Care,Skincare,Mamaearth,846,4.02,2022-01-08
+50185,Dove Haircare 154,Beauty & Personal Care,Haircare,Dove,432,0.15,2022-06-03
+50186,Mamaearth Grooming 649,Beauty & Personal Care,Grooming,Mamaearth,139,6.33,2022-09-16
+50187,Nivea Fragrances 115,Beauty & Personal Care,Fragrances,Nivea,1143,3.29,2021-11-14
+50188,Wow Skin Science Skincare 494,Beauty & Personal Care,Skincare,Wow Skin Science,2295,1.02,2023-03-28
+50189,Wow Skin Science Haircare 471,Beauty & Personal Care,Haircare,Wow Skin Science,2115,2.96,2022-04-28
+50190,Mamaearth Grooming 917,Beauty & Personal Care,Grooming,Mamaearth,837,8.15,2023-10-07
+50191,Lakme Fragrances 848,Beauty & Personal Care,Fragrances,Lakme,981,5.74,2021-02-10
+50192,Wow Skin Science Makeup 413,Beauty & Personal Care,Makeup,Wow Skin Science,468,7.02,2021-03-08
+50193,Nivea Grooming 564,Beauty & Personal Care,Grooming,Nivea,2862,4.65,2021-04-02
+50194,Nivea Grooming 419,Beauty & Personal Care,Grooming,Nivea,729,8.69,2021-12-10
+50195,Nivea Haircare 654,Beauty & Personal Care,Haircare,Nivea,459,0.78,2023-09-14
+50196,Dove Makeup 507,Beauty & Personal Care,Makeup,Dove,648,8.65,2021-06-11
+50197,Wow Skin Science Fragrances 436,Beauty & Personal Care,Fragrances,Wow Skin Science,1863,3.96,2022-08-18
+50198,Wow Skin Science Skincare 667,Beauty & Personal Care,Skincare,Wow Skin Science,810,6.69,2021-09-01
+50199,Wow Skin Science Makeup 599,Beauty & Personal Care,Makeup,Wow Skin Science,189,1.94,2021-07-15
+50200,Nivia Yoga Mats 543,Sports & Fitness,Yoga Mats,Nivia,3600,4.59,2022-05-18
+50201,Yonex Fitness Bands 573,Sports & Fitness,Fitness Bands,Yonex,5706,11.4,2024-07-20
+50202,Nivia Dumbbells 250,Sports & Fitness,Dumbbells,Nivia,6093,3.47,2024-07-16
+50203,Cosco Fitness Bands 551,Sports & Fitness,Fitness Bands,Cosco,405,2.35,2024-05-20
+50204,Decathlon Dumbbells 211,Sports & Fitness,Dumbbells,Decathlon,540,11.63,2021-07-30
+50205,Decathlon Cycles 540,Sports & Fitness,Cycles,Decathlon,11484,0.45,2022-06-29
+50206,Nivia Dumbbells 113,Sports & Fitness,Dumbbells,Nivia,2313,10.34,2024-06-04
+50207,Decathlon Dumbbells 544,Sports & Fitness,Dumbbells,Decathlon,5067,7.44,2024-06-30
+50208,Cosco Fitness Bands 460,Sports & Fitness,Fitness Bands,Cosco,13482,1.99,2022-04-05
+50209,Boldfit Cycles 984,Sports & Fitness,Cycles,Boldfit,3204,10.75,2022-08-15
+50210,Decathlon Dumbbells 749,Sports & Fitness,Dumbbells,Decathlon,14490,4.1,2021-06-12
+50211,Decathlon Cycles 299,Sports & Fitness,Cycles,Decathlon,369,5.04,2023-10-20
+50212,Cosco Yoga Mats 995,Sports & Fitness,Yoga Mats,Cosco,12357,4.48,2022-08-13
+50213,Decathlon Yoga Mats 225,Sports & Fitness,Yoga Mats,Decathlon,1251,4.08,2022-07-15
+50214,Cosco Dumbbells 293,Sports & Fitness,Dumbbells,Cosco,909,1.39,2023-10-16
+50215,Cosco Cycles 176,Sports & Fitness,Cycles,Cosco,10071,3.93,2022-09-22
+50216,Nivia Yoga Mats 565,Sports & Fitness,Yoga Mats,Nivia,1008,0.57,2022-04-28
+50217,Decathlon Yoga Mats 712,Sports & Fitness,Yoga Mats,Decathlon,2367,6.83,2023-06-12
+50218,Nivia Cycles 303,Sports & Fitness,Cycles,Nivia,990,6.03,2021-08-30
+50219,Boldfit Sportswear 709,Sports & Fitness,Sportswear,Boldfit,909,1.35,2024-05-16
+50220,Boldfit Sportswear 457,Sports & Fitness,Sportswear,Boldfit,3429,9.63,2023-03-31
+50221,Yonex Dumbbells 482,Sports & Fitness,Dumbbells,Yonex,12546,3.21,2025-02-16
+50222,Decathlon Dumbbells 659,Sports & Fitness,Dumbbells,Decathlon,3096,3.9,2022-04-17
+50223,Boldfit Sportswear 238,Sports & Fitness,Sportswear,Boldfit,585,1.53,2022-01-14
+50224,Yonex Sportswear 641,Sports & Fitness,Sportswear,Yonex,297,11.37,2025-01-09
+50225,Cosco Yoga Mats 725,Sports & Fitness,Yoga Mats,Cosco,2034,3.84,2024-05-03
+50226,Nivia Fitness Bands 770,Sports & Fitness,Fitness Bands,Nivia,6894,9.71,2022-03-30
+50227,Yonex Sportswear 771,Sports & Fitness,Sportswear,Yonex,1080,7.25,2023-01-13
+50228,Decathlon Yoga Mats 774,Sports & Fitness,Yoga Mats,Decathlon,4959,10.63,2021-05-02
+50229,Cosco Sportswear 351,Sports & Fitness,Sportswear,Cosco,3447,7.16,2021-06-03
+50230,Decathlon Dumbbells 477,Sports & Fitness,Dumbbells,Decathlon,6165,6.13,2023-09-25
+50231,Cosco Yoga Mats 334,Sports & Fitness,Yoga Mats,Cosco,504,10.95,2022-08-03
+50232,Cosco Fitness Bands 317,Sports & Fitness,Fitness Bands,Cosco,13536,8.69,2024-04-06
+50233,Nivia Sportswear 678,Sports & Fitness,Sportswear,Nivia,4140,8.5,2024-03-11
+50234,Yonex Fitness Bands 160,Sports & Fitness,Fitness Bands,Yonex,2367,3.29,2024-01-04
+50235,Decathlon Cycles 593,Sports & Fitness,Cycles,Decathlon,1773,7.18,2023-05-13
+50236,Cosco Sportswear 750,Sports & Fitness,Sportswear,Cosco,5733,8.59,2024-12-17
+50237,Decathlon Sportswear 635,Sports & Fitness,Sportswear,Decathlon,9432,11.61,2025-07-30
+50238,Boldfit Cycles 744,Sports & Fitness,Cycles,Boldfit,3150,5.75,2022-12-30
+50239,Cosco Cycles 427,Sports & Fitness,Cycles,Cosco,2232,10.91,2021-08-27
+50240,HarperCollins Self Help 618,Books,Self Help,HarperCollins,149,4.78,2024-08-19
+50241,Penguin Academic 583,Books,Academic,Penguin,459,2.12,2022-01-23
+50242,Scholastic Academic 795,Books,Academic,Scholastic,459,4.37,2024-06-05
+50243,Penguin Academic 604,Books,Academic,Penguin,981,0.37,2022-05-16
+50244,Rupa Publications Academic 806,Books,Academic,Rupa Publications,159,8.48,2024-07-11
+50245,Rupa Publications Academic 346,Books,Academic,Rupa Publications,1017,9.21,2023-08-30
+50246,HarperCollins Children's Books 637,Books,Children's Books,HarperCollins,513,0.7,2021-11-23
+50247,Penguin Fiction 215,Books,Fiction,Penguin,109,3.13,2025-05-04
+50248,Rupa Publications Children's Books 816,Books,Children's Books,Rupa Publications,414,10.07,2024-08-08
+50249,Scholastic Children's Books 876,Books,Children's Books,Scholastic,333,8.92,2025-02-20
+50250,Scholastic Self Help 638,Books,Self Help,Scholastic,882,6.37,2023-05-27
+50251,Rupa Publications Fiction 829,Books,Fiction,Rupa Publications,369,0.69,2024-11-21
+50252,Penguin Self Help 166,Books,Self Help,Penguin,423,11.72,2023-07-04
+50253,Penguin Academic 318,Books,Academic,Penguin,612,11.61,2024-06-26
+50254,HarperCollins Academic 124,Books,Academic,HarperCollins,109,6.66,2023-06-09
+50255,Rupa Publications Academic 403,Books,Academic,Rupa Publications,1044,5.82,2024-10-04
+50256,Penguin Academic 639,Books,Academic,Penguin,423,3.05,2022-04-07
+50257,Scholastic Academic 100,Books,Academic,Scholastic,882,2.79,2024-10-10
+50258,Penguin Self Help 249,Books,Self Help,Penguin,129,7.53,2023-06-24
+50259,Penguin Fiction 897,Books,Fiction,Penguin,639,11.12,2022-03-21
+50260,Scholastic Fiction 176,Books,Fiction,Scholastic,159,2.82,2022-11-19
+50261,Rupa Publications Fiction 443,Books,Fiction,Rupa Publications,1008,3.94,2021-09-19
+50262,Scholastic Self Help 980,Books,Self Help,Scholastic,189,2.69,2025-07-24
+50263,HarperCollins Academic 212,Books,Academic,HarperCollins,360,4.62,2021-03-09
+50264,Rupa Publications Self Help 625,Books,Self Help,Rupa Publications,139,4.91,2025-05-25
+50265,Penguin Self Help 345,Books,Self Help,Penguin,99,0.79,2021-04-29
+50266,HarperCollins Self Help 746,Books,Self Help,HarperCollins,738,11.37,2025-02-09
+50267,HarperCollins Self Help 698,Books,Self Help,HarperCollins,594,2.64,2021-06-07
+50268,HarperCollins Academic 816,Books,Academic,HarperCollins,423,5.57,2022-03-01
+50269,Penguin Children's Books 203,Books,Children's Books,Penguin,1071,11.47,2022-11-11
+50270,Rupa Publications Children's Books 814,Books,Children's Books,Rupa Publications,774,2.54,2022-10-31
+50271,Scholastic Children's Books 770,Books,Children's Books,Scholastic,657,3.3,2021-10-14
+50272,Penguin Fiction 531,Books,Fiction,Penguin,297,6.91,2022-10-20
+50273,Rupa Publications Academic 707,Books,Academic,Rupa Publications,675,3.2,2025-03-29
+50274,HarperCollins Academic 311,Books,Academic,HarperCollins,306,0.17,2021-05-14
+50275,HarperCollins Children's Books 614,Books,Children's Books,HarperCollins,179,0.79,2024-11-09
+50276,HarperCollins Children's Books 676,Books,Children's Books,HarperCollins,109,6.84,2025-06-10
+50277,HarperCollins Fiction 961,Books,Fiction,HarperCollins,139,7.03,2025-05-03
+50278,Scholastic Academic 825,Books,Academic,Scholastic,432,10.76,2024-08-14
+50279,HarperCollins Academic 306,Books,Academic,HarperCollins,576,7.84,2025-02-16
+50280,Britannia Personal Hygiene 959,Grocery,Personal Hygiene,Britannia,29,10.43,2022-05-11
+50281,Britannia Staples 385,Grocery,Staples,Britannia,981,5.53,2025-01-30
+50282,ITC Personal Hygiene 505,Grocery,Personal Hygiene,ITC,79,8.0,2025-07-16
+50283,Tata Personal Hygiene 378,Grocery,Personal Hygiene,Tata,119,8.14,2021-02-13
+50284,Tata Beverages 739,Grocery,Beverages,Tata,59,1.92,2022-04-04
+50285,Amul Beverages 788,Grocery,Beverages,Amul,423,1.18,2022-02-28
+50286,ITC Personal Hygiene 405,Grocery,Personal Hygiene,ITC,441,9.18,2021-09-08
+50287,Patanjali Snacks 602,Grocery,Snacks,Patanjali,315,8.83,2021-12-23
+50288,ITC Staples 827,Grocery,Staples,ITC,297,8.94,2025-03-27
+50289,ITC Snacks 273,Grocery,Snacks,ITC,855,2.03,2023-02-06
+50290,Amul Personal Hygiene 613,Grocery,Personal Hygiene,Amul,139,9.59,2021-10-21
+50291,ITC Staples 745,Grocery,Staples,ITC,119,2.4,2022-08-03
+50292,Amul Snacks 552,Grocery,Snacks,Amul,29,6.57,2021-10-30
+50293,Patanjali Staples 422,Grocery,Staples,Patanjali,360,0.12,2024-11-23
+50294,Tata Snacks 929,Grocery,Snacks,Tata,909,3.93,2025-07-26
+50295,Britannia Snacks 720,Grocery,Snacks,Britannia,129,4.31,2022-10-17
+50296,Tata Staples 334,Grocery,Staples,Tata,119,3.93,2025-08-19
+50297,Tata Snacks 573,Grocery,Snacks,Tata,369,3.29,2022-08-19
+50298,Amul Beverages 815,Grocery,Beverages,Amul,159,11.47,2022-10-24
+50299,Tata Beverages 733,Grocery,Beverages,Tata,693,8.33,2022-03-09
+50300,Britannia Staples 105,Grocery,Staples,Britannia,89,11.79,2025-02-03
+50301,Patanjali Personal Hygiene 588,Grocery,Personal Hygiene,Patanjali,119,0.53,2023-11-06
+50302,Tata Personal Hygiene 562,Grocery,Personal Hygiene,Tata,333,9.46,2023-09-06
+50303,Patanjali Personal Hygiene 832,Grocery,Personal Hygiene,Patanjali,315,0.87,2023-07-10
+50304,Patanjali Personal Hygiene 347,Grocery,Personal Hygiene,Patanjali,432,2.39,2025-04-25
+50305,Britannia Snacks 570,Grocery,Snacks,Britannia,59,1.67,2021-09-26
+50306,Patanjali Beverages 124,Grocery,Beverages,Patanjali,39,3.87,2024-06-01
+50307,Tata Personal Hygiene 372,Grocery,Personal Hygiene,Tata,954,2.7,2025-06-20
+50308,Tata Personal Hygiene 644,Grocery,Personal Hygiene,Tata,99,9.39,2024-07-27
+50309,Britannia Personal Hygiene 533,Grocery,Personal Hygiene,Britannia,342,10.17,2024-10-31
+50310,Amul Personal Hygiene 732,Grocery,Personal Hygiene,Amul,79,9.85,2023-02-27
+50311,Amul Staples 890,Grocery,Staples,Amul,954,2.4,2021-08-31
+50312,Patanjali Personal Hygiene 580,Grocery,Personal Hygiene,Patanjali,315,6.19,2023-11-14
+50313,ITC Snacks 583,Grocery,Snacks,ITC,324,0.63,2024-02-12
+50314,Amul Snacks 739,Grocery,Snacks,Amul,747,0.66,2025-03-06
+50315,ITC Personal Hygiene 591,Grocery,Personal Hygiene,ITC,585,0.32,2025-05-02
+50316,Amul Personal Hygiene 388,Grocery,Personal Hygiene,Amul,29,7.57,2025-07-07
+50317,ITC Snacks 873,Grocery,Snacks,ITC,99,11.02,2022-03-30
+50318,Tata Snacks 738,Grocery,Snacks,Tata,69,9.09,2024-12-08
+50319,Britannia Staples 650,Grocery,Staples,Britannia,369,8.89,2023-06-28
+50320,Himalaya Toys 242,Toys & Baby,Toys,Himalaya,139,1.64,2024-05-15
+50321,LEGO Toys 816,Toys & Baby,Toys,LEGO,2997,1.44,2022-08-15
+50322,Hot Wheels Baby Care 431,Toys & Baby,Baby Care,Hot Wheels,199,3.24,2021-11-14
+50323,LEGO Toys 680,Toys & Baby,Toys,LEGO,169,11.81,2023-07-02
+50324,Himalaya Diapers 916,Toys & Baby,Diapers,Himalaya,129,7.73,2023-11-19
+50325,Hot Wheels Toys 890,Toys & Baby,Toys,Hot Wheels,1224,5.75,2021-07-14
+50326,Hot Wheels Baby Care 165,Toys & Baby,Baby Care,Hot Wheels,621,9.46,2021-02-21
+50327,Fisher-Price Baby Food 447,Toys & Baby,Baby Food,Fisher-Price,513,3.4,2022-01-28
+50328,Hot Wheels Toys 379,Toys & Baby,Toys,Hot Wheels,1062,2.11,2022-07-01
+50329,LEGO Baby Food 512,Toys & Baby,Baby Food,LEGO,3681,3.96,2021-02-09
+50330,Fisher-Price Toys 453,Toys & Baby,Toys,Fisher-Price,109,11.17,2023-04-04
+50331,Himalaya Baby Food 970,Toys & Baby,Baby Food,Himalaya,450,5.17,2021-10-11
+50332,Pampers Toys 290,Toys & Baby,Toys,Pampers,567,10.63,2023-09-23
+50333,Pampers Baby Care 449,Toys & Baby,Baby Care,Pampers,1215,10.83,2023-08-16
+50334,Himalaya Toys 218,Toys & Baby,Toys,Himalaya,693,10.83,2021-02-21
+50335,Hot Wheels Toys 889,Toys & Baby,Toys,Hot Wheels,378,0.7,2023-12-10
+50336,Pampers Baby Care 405,Toys & Baby,Baby Care,Pampers,810,5.75,2021-01-31
+50337,Pampers Diapers 133,Toys & Baby,Diapers,Pampers,159,1.93,2021-05-19
+50338,LEGO Diapers 539,Toys & Baby,Diapers,LEGO,918,4.64,2021-07-18
+50339,Himalaya Baby Food 348,Toys & Baby,Baby Food,Himalaya,169,7.89,2021-01-29
+50340,Hot Wheels Diapers 906,Toys & Baby,Diapers,Hot Wheels,1800,9.89,2024-04-27
+50341,Fisher-Price Baby Care 252,Toys & Baby,Baby Care,Fisher-Price,139,9.41,2025-06-13
+50342,LEGO Baby Care 368,Toys & Baby,Baby Care,LEGO,3123,10.09,2023-04-25
+50343,Hot Wheels Baby Food 592,Toys & Baby,Baby Food,Hot Wheels,2169,1.79,2022-05-23
+50344,Fisher-Price Toys 482,Toys & Baby,Toys,Fisher-Price,3501,4.24,2022-12-27
+50345,Pampers Diapers 949,Toys & Baby,Diapers,Pampers,495,0.8,2023-12-07
+50346,Fisher-Price Diapers 593,Toys & Baby,Diapers,Fisher-Price,1926,1.59,2022-12-12
+50347,Fisher-Price Baby Care 334,Toys & Baby,Baby Care,Fisher-Price,315,0.22,2025-03-30
+50348,Pampers Toys 869,Toys & Baby,Toys,Pampers,1611,10.78,2025-02-17
+50349,Pampers Baby Care 998,Toys & Baby,Baby Care,Pampers,414,9.24,2023-10-24
+50350,Hot Wheels Baby Food 388,Toys & Baby,Baby Food,Hot Wheels,342,6.21,2021-10-13
+50351,Hot Wheels Toys 962,Toys & Baby,Toys,Hot Wheels,99,6.93,2021-02-05
+50352,Hot Wheels Baby Food 787,Toys & Baby,Baby Food,Hot Wheels,306,8.86,2024-10-10
+50353,Fisher-Price Diapers 691,Toys & Baby,Diapers,Fisher-Price,981,10.04,2023-11-27
+50354,Pampers Baby Care 514,Toys & Baby,Baby Care,Pampers,2637,1.2,2024-04-17
+50355,Fisher-Price Toys 354,Toys & Baby,Toys,Fisher-Price,297,5.98,2021-08-06
+50356,Himalaya Toys 992,Toys & Baby,Toys,Himalaya,199,1.98,2024-03-21
+50357,Hot Wheels Baby Care 848,Toys & Baby,Baby Care,Hot Wheels,3168,7.79,2025-05-06
+50358,Himalaya Diapers 108,Toys & Baby,Diapers,Himalaya,159,5.24,2025-02-04
+50359,Fisher-Price Baby Food 301,Toys & Baby,Baby Food,Fisher-Price,459,11.0,2021-06-16

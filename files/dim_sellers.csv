@@ -1,0 +1,71 @@
+seller_id,seller_name,seller_city,seller_state,is_flipkart_assured,seller_rating,seller_since
+7000,Cloudtail-style 0,Jodhpur,Rajasthan,False,3.1,2022-08-20
+7001,Bharat Electronics Hub 1,Visakhapatnam,Andhra Pradesh,False,4.0,2023-03-17
+7002,RetailNet 2,Vadodara,Gujarat,False,3.7,2024-03-29
+7003,Apex Distributors 3,Delhi,Delhi,True,3.7,2019-02-13
+7004,RetailNet 4,Mumbai,Maharashtra,True,3.4,2021-10-13
+7005,Cloudtail-style 5,Bhopal,Madhya Pradesh,False,4.5,2020-05-21
+7006,StyleHub India 6,Bhopal,Madhya Pradesh,True,3.2,2021-04-22
+7007,GreenLeaf Mart 7,Kolkata,West Bengal,False,3.1,2019-07-11
+7008,Metro Wholesale 8,Ahmedabad,Gujarat,False,4.0,2021-01-03
+7009,Digiworld Traders 9,Ahmedabad,Gujarat,True,3.5,2023-12-15
+7010,NextGen Retail 10,Hyderabad,Telangana,False,4.2,2024-09-13
+7011,Metro Wholesale 11,Chennai,Tamil Nadu,False,3.6,2024-11-17
+7012,NextGen Retail 12,Pune,Maharashtra,True,3.2,2022-03-16
+7013,Bharat Electronics Hub 13,Nagpur,Maharashtra,False,4.3,2019-01-16
+7014,Bharat Electronics Hub 14,Nashik,Maharashtra,True,4.3,2020-10-18
+7015,FastTrack Retail 15,Lucknow,Uttar Pradesh,True,3.6,2024-07-15
+7016,Apex Distributors 16,Coimbatore,Tamil Nadu,False,4.7,2024-02-23
+7017,UrbanTrade 17,Chandigarh,Punjab,True,3.8,2020-10-06
+7018,UrbanTrade 18,Delhi,Delhi,False,3.1,2020-10-12
+7019,Bharat Electronics Hub 19,Bhopal,Madhya Pradesh,False,4.9,2022-10-26
+7020,Cloudtail-style 20,Ahmedabad,Gujarat,False,3.1,2022-12-01
+7021,PrimeMart Sellers 21,Surat,Gujarat,True,4.9,2021-03-01
+7022,Quickship Traders 22,Mumbai,Maharashtra,True,3.0,2024-06-08
+7023,CityCart Sellers 23,Guwahati,Assam,True,4.6,2021-03-18
+7024,TrustMart Sellers 24,Mysore,Karnataka,False,4.1,2019-12-20
+7025,Unity Wholesale 25,Mumbai,Maharashtra,True,4.9,2021-04-10
+7026,StyleHub India 26,Bangalore,Karnataka,False,3.7,2022-09-21
+7027,Apex Distributors 27,Bangalore,Karnataka,False,4.5,2024-06-15
+7028,PrimeMart Sellers 28,Kochi,Kerala,False,3.6,2022-09-17
+7029,Quickship Traders 29,Nagpur,Maharashtra,False,4.1,2023-03-29
+7030,RetailNet 30,Bangalore,Karnataka,False,4.0,2025-01-04
+7031,Value Bazaar 31,Chandigarh,Punjab,False,4.9,2022-06-16
+7032,Bharat Electronics Hub 32,Kolkata,West Bengal,True,3.6,2023-09-09
+7033,GreenLeaf Mart 33,Ahmedabad,Gujarat,False,4.4,2024-05-26
+7034,UrbanTrade 34,Kolkata,West Bengal,False,3.8,2023-01-09
+7035,FastTrack Retail 35,Lucknow,Uttar Pradesh,True,4.3,2023-11-15
+7036,Omnitech Distributors 36,Ahmedabad,Gujarat,False,3.6,2023-05-17
+7037,Digiworld Traders 37,Hyderabad,Telangana,True,3.3,2023-06-21
+7038,Unity Wholesale 38,Pune,Maharashtra,True,4.8,2021-07-07
+7039,Quickship Traders 39,Guwahati,Assam,True,4.6,2024-06-07
+7040,NextGen Retail 40,Jaipur,Rajasthan,False,4.7,2022-01-24
+7041,Apex Distributors 41,Amritsar,Punjab,True,3.0,2022-06-23
+7042,Bharat Electronics Hub 42,Lucknow,Uttar Pradesh,False,4.1,2021-12-29
+7043,NextGen Retail 43,Kochi,Kerala,True,4.7,2021-03-31
+7044,UrbanTrade 44,Chennai,Tamil Nadu,False,4.3,2020-12-20
+7045,UrbanTrade 45,Chandigarh,Punjab,True,3.7,2020-07-12
+7046,Unity Wholesale 46,Hyderabad,Telangana,False,4.6,2020-11-28
+7047,CityCart Sellers 47,Mumbai,Maharashtra,False,3.1,2020-05-04
+7048,NextGen Retail 48,Delhi,Delhi,False,4.5,2020-04-16
+7049,Unity Wholesale 49,Mumbai,Maharashtra,True,4.0,2023-09-05
+7050,GreenLeaf Mart 50,Mysore,Karnataka,False,4.2,2021-07-18
+7051,Bharat Electronics Hub 51,Dhanbad,Jharkhand,True,3.9,2024-08-19
+7052,GreenLeaf Mart 52,Kochi,Kerala,False,4.2,2023-08-25
+7053,Apex Distributors 53,Delhi,Delhi,False,3.3,2022-01-30
+7054,GreenLeaf Mart 54,Guwahati,Assam,False,3.9,2024-08-19
+7055,UrbanTrade 55,Coimbatore,Tamil Nadu,True,4.8,2022-03-08
+7056,PrimeMart Sellers 56,Chennai,Tamil Nadu,False,4.9,2024-06-28
+7057,Bharat Electronics Hub 57,Jaipur,Rajasthan,False,4.6,2023-01-13
+7058,GreenLeaf Mart 58,Bhopal,Madhya Pradesh,False,3.9,2019-02-22
+7059,Digiworld Traders 59,Mumbai,Maharashtra,False,3.7,2023-01-21
+7060,RetailNet 60,Jaipur,Rajasthan,False,3.8,2019-03-11
+7061,Unity Wholesale 61,Coimbatore,Tamil Nadu,True,4.1,2020-05-09
+7062,Digiworld Traders 62,Bangalore,Karnataka,False,3.2,2020-11-30
+7063,PrimeMart Sellers 63,Pune,Maharashtra,True,4.0,2022-06-24
+7064,Unity Wholesale 64,Lucknow,Uttar Pradesh,False,3.8,2022-04-30
+7065,GreenLeaf Mart 65,Coimbatore,Tamil Nadu,True,3.9,2022-01-25
+7066,TrustMart Sellers 66,Nashik,Maharashtra,False,3.8,2021-03-31
+7067,Sunrise Enterprises 67,Ranchi,Jharkhand,False,3.4,2023-09-11
+7068,PrimeMart Sellers 68,Indore,Madhya Pradesh,True,4.0,2020-08-25
+7069,PrimeMart Sellers 69,Nagpur,Maharashtra,False,3.8,2024-01-02
