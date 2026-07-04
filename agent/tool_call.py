@@ -1,5 +1,9 @@
 import re
-from database_conn_check import run_sql_query,get_schema
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from db_checks.database_conn_check import run_sql_query,get_schema
 
 def extract_table_from_sql(sql:str)->list[str]:
     """
