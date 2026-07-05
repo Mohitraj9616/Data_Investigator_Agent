@@ -37,6 +37,8 @@ Rules you must follow without exception:
    identifiers in PostgreSQL, not string literals.
    CORRECT:   WHERE order_status = 'Returned'
    INCORRECT: WHERE order_status = "Returned".
+8. If the question clearly requires multiple tables, use action "get_schema_all" 
+   instead of fetching each table one by one. This saves turns.
 
 
 You must ALWAYS respond with valid JSON in exactly this format, nothing else:
@@ -62,6 +64,9 @@ def call_llm(messages: list) -> dict:
     System prompt is passed as the first message with role "system".
     Always returns a dict — never raises, never returns raw text.
     """
+    # ALLOWLIST: add new actions here AND add their branch in loop.py
+    VALID_ACTIONS = ("get_schema", "get_schema_all", "run_sql", "answer", "error")
+
     try:
         # OpenAI takes system prompt as a message with role "system"
         # prepend it to the messages list
@@ -98,7 +103,7 @@ def call_llm(messages: list) -> dict:
                 "error_message": f"LLM response missing 'action' key:{raw_text} "
             }
         
-        if action["action"] not in ("get_schema", "run_sql", "answer", "error"):
+        if action["action"] not in VALID_ACTIONS:
             return {
                 "action": "error",
                 "error_message": f"Unknown action returned: {action['action']}"

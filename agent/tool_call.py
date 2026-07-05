@@ -18,6 +18,12 @@ def extract_table_from_sql(sql:str)->list[str]:
     return tables
 
 
+def get_all_schemas(schema_cache: dict) -> tuple[dict, dict]:
+    """Fetch schemas for all known tables in one go."""
+    all_tables = ["fact_sales", "dim_products", "dim_customers", 
+                  "dim_date", "dim_sellers"]
+    return ensure_schemas_cached(all_tables, schema_cache)
+
 def ensure_schemas_cached(tables: list, schema_cache: dict) -> tuple[dict, dict]:
     """
     Checks which tables are missing from cache, fetches only those.

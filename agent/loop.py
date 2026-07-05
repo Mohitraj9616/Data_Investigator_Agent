@@ -2,7 +2,7 @@ from llm_call import call_llm
 from tool_call import (extract_table_from_sql,
                              ensure_schemas_cached,
                              format_schema_for_llm,
-                             check_sql_safety)
+                             check_sql_safety,get_all_schemas)
 
 
 from db_checks.database_conn_check import run_sql_query
@@ -60,7 +60,7 @@ def agent_loop(user_question: str, max_retries: int = 5) ->dict:
             }
         
         
-        # ------------ get Schema ----------------------------
+        # ------------ get Schema --------------------------------------
         elif action == 'get_schema':
             table = llm_response.get("table_name")
             if not table:
@@ -78,6 +78,17 @@ def agent_loop(user_question: str, max_retries: int = 5) ->dict:
                 }
 
                 print(f"Schema fetched for '{table}' ")
+        
+        # ----------- get Schema for all ------------------------------
+
+        elif action == "get_schema_all":
+            schema_cache, newly_fetched = get_all_schemas(schema_cache)
+            observation = {
+                "status": "schema_fetched",
+                "message": "All table schemas fetched.",
+                "schema": format_schema_for_llm(schema_cache)
+            }
+            print(f"Schema : fetched all tables at once")
         
 
         # -------------------run_sql -----------------------------
@@ -169,62 +180,100 @@ def agent_loop(user_question: str, max_retries: int = 5) ->dict:
                             }
                             print(f"Result : {result['row_count']} rows returned")
 
-            
+        
         elif action == "answer":
-            answer = llm_response.get("answer","").strip()
+            answer = llm_response.get("answer", "")
+            
+            # accept both string and dict — LLM often returns structured data
+            if isinstance(answer, dict):
+                display_answer = "\n".join(f"  {k}: {v}" for k, v in answer.items())
+                answer = str(answer)  # convert to string for storage
+            else:
+                answer = answer.strip()
+                display_answer = answer
+
             if not answer:
                 return {
                     "status": "error",
                     "reason": "LLM produced answer action with empty answer field.",
                     "conversation": messages,
                 }
-            
-            print(f"\nAnswer : {answer}")
+
+            print(f"\nAnswer :\n{display_answer}")
             print(f"{'='*60}\n")
             return {
-                "status":"success",
-                "answer" : answer,
-                "schema_used" : list(schema_cache.keys()),
-                "turns_taken" : len(messages),
+                "status": "success",
+                "answer": answer,
+                "display": display_answer,      # always human-readable
+                "schema_used": list(schema_cache.keys()),
+                "turns_taken": len([m for m in messages if m["role"] == "assistant"]),
             }
+
         else:
             observation = {
-                "status" : "error",
-                "message": f"Unknown action '{action}' — expected get_schema, run_sql, or answer."
+                "status": "error",
+                "message": f"Unknown action '{action}' — expected get_schema, get_schema_all, run_sql, or answer."
             }
             retries += 1
-            
+
         # ── OBSERVE ─────────────────────────────────────────────
-        # append what the LLM decided AND what happened
-        # so the next iteration has the full context
         messages.append({"role": "assistant", "content": str(llm_response)})
         messages.append({"role": "user", "content": str(observation)})
 
-    # retry ceiling hit
-    return {
-        "status": "failed",
-        "reason": f"Could not produce a verified answer within {max_retries} attempts.",
-        "last_observation": str(observation),
-        "conversation": messages,
-    }
+# # retry ceiling hit
+#         elif action == "answer":
+#             answer = llm_response.get("answer", "")
+#             if isinstance(answer, dict):
+#                  answer = str(answer)  # convert dict to string if LLM returned structured JSON
+#             answer = answer.strip()
+#             if not answer:
+#                 return {
+#                     "status": "error",
+#                     "reason": "LLM produced answer action with empty answer field.",
+#                     "conversation": messages,
+#                 }
+            
+#             print(f"\nAnswer : {answer}")
+#             print(f"{'='*60}\n")
+#             return {
+#                 "status":"success",
+#                 "answer" : answer,
+#                 "schema_used" : list(schema_cache.keys()),
+#                 "turns_taken" : len(messages),
+#             }
+#         else:
+#             observation = {
+#                 "status" : "error",
+#                 "message": f"Unknown action '{action}' — expected get_schema, run_sql, or answer."
+#             }
+#             retries += 1
+            
+#         # ── OBSERVE ─────────────────────────────────────────────
+#         # append what the LLM decided AND what happened
+#         # so the next iteration has the full context
+#         messages.append({"role": "assistant", "content": str(llm_response)})
+#         messages.append({"role": "user", "content": str(observation)})
+
+#     # retry ceiling hit
+#     return {
+#         "status": "failed",
+#         "reason": f"Could not produce a verified answer within {max_retries} attempts.",
+#         "last_observation": str(observation),
+#         "conversation": messages,
+#     }
 
 
 if __name__ == "__main__":
-    # start with this question — it requires a JOIN, a GROUP BY,
-    # and a filter the agent has to figure out from schema
-    result = agent_loop(
-        "Which product category had the highest return rate in 2024?"
-    )
-    print("\nFinal result:")
-    print(f"Status : {result['status']}")
-    if result["status"] == "success":
-        print(f"Answer : {result['answer']}")
-        print(f"Tables : {result['schema_used']}")
-        print(f"Turns  : {result['turns_taken']}")
-    else:
-        print(f"Reason : {result['reason']}")
-                        
-
+    questions = [
+        "Which product category had the highest return rate in 2024?",
+        "Which city tier has the highest Cash on Delivery usage?",
+        "Did average delivery delay get worse during Diwali Sale 2025?",
+    ]
+    for q in questions:
+        result = agent_loop(q, max_retries=5)
+        print(f"Status : {result['status']}")
+        print(f"Turns  : {result.get('turns_taken')}")
+        print()
 
 
 
