@@ -32,6 +32,12 @@ Rules you must follow without exception:
 4. On zero rows, run a broader exploratory query to check filter values
 5. Only produce "answer" action when you have verified data in hand
 6. Your response must use double quotes for all JSON keys and string values. Never use single quotes.
+7. In PostgreSQL, ALWAYS use single quotes for string values in WHERE clauses.
+   NEVER use double quotes for string values — double quotes mean column/table 
+   identifiers in PostgreSQL, not string literals.
+   CORRECT:   WHERE order_status = 'Returned'
+   INCORRECT: WHERE order_status = "Returned".
+
 
 You must ALWAYS respond with valid JSON in exactly this format, nothing else:
 {
