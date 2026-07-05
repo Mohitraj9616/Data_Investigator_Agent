@@ -8,7 +8,7 @@ from tool_call import (extract_table_from_sql,
 from db_checks.database_conn_check import run_sql_query
 
 
-def agent_loop(user_question: str, max_retries: int = 3) ->dict:
+def agent_loop(user_question: str, max_retries: int = 5) ->dict:
     """
     The core agent loop. Three phases every iteration:
     1. DECIDE  — call_llm returns next action
@@ -35,8 +35,9 @@ def agent_loop(user_question: str, max_retries: int = 3) ->dict:
     print(f"Question: {user_question}")
     print(f"{'='*60}\n")
 
-    while retries < max_retries:
-        print(f"--- Iteration {retries+1} / {max_retries} ----")
+    while retries <= max_retries:
+        turn = len([m for m in messages if m["role"] == "assistant"]) + 1
+        print(f"--- Turn {turn} (retries used: {retries}/{max_retries}) ---")
 
         #---------------Decide ------------------------
 
@@ -143,14 +144,18 @@ def agent_loop(user_question: str, max_retries: int = 3) ->dict:
                         elif result["row_count"] == 0:
                              retries+=1
                              observation = {
-                                 "status" : "empty_result",
-                                 "sql_that_ran": sql,
-                                 "hint" : ("Query ran without error but returned 0 rows. "
-                                    "Your filter values may be wrong. "
-                                    "Run a broader query first to inspect actual "
-                                    "values in the column you are filtering on."
-                                ),
-                             }
+                                    "status": "empty_result",
+                                    "sql_that_ran": sql,
+                                    "hint": (
+                                        "Query ran without error but returned 0 rows. "
+                                        "Your filter value is likely wrong — check the exact "
+                                        "values that exist in the column you are filtering on. "
+                                        "For example, if filtering on order_status = 'returned', "
+                                        "first run: SELECT DISTINCT order_status FROM fact_sales "
+                                        "to see the actual values stored in that column. "
+                                        "Values may be capitalised differently than you expect."
+                                    ),
+                                }
 
                              print(f"Result : 0 rows — prompting broader query")
 

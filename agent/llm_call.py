@@ -3,6 +3,7 @@ import re
 from dotenv import load_dotenv
 import json
 from openai import OpenAI, APIError
+import ast
 
 load_dotenv()
 
@@ -30,6 +31,7 @@ Rules you must follow without exception:
 3. On a column error, ALWAYS fetch schema again before retrying
 4. On zero rows, run a broader exploratory query to check filter values
 5. Only produce "answer" action when you have verified data in hand
+6. Your response must use double quotes for all JSON keys and string values. Never use single quotes.
 
 You must ALWAYS respond with valid JSON in exactly this format, nothing else:
 {
@@ -72,7 +74,16 @@ def call_llm(messages: list) -> dict:
         if raw_text.startswith("```"):
             raw_text = re.sub(r"```(?:json)?", "", raw_text).strip().strip("```").strip()
 
-        action  = json.loads(raw_text)
+        try:
+            action  = json.loads(raw_text)
+        except json.JSONDecodeError:
+            try:
+                action = ast.literal_eval(raw_text)
+            except (ValueError, SyntaxError):
+                return {
+                    "action": "error",
+                    "error_message": f"LLM returned non-parseable response: {raw_text}"
+                }
 
 
         if "action" not in action:
