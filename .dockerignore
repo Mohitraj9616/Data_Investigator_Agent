@@ -1,10 +1,14 @@
-.env
-.env.*
 venv/
 __pycache__/
 *.pyc
 *.pyo
+.env
+.git/
+.gitignore
 .DS_Store
 *.egg-info/
 .dvc/
 files/
+db_checks/loading_csv.py
+README.md
+LICENSE
