@@ -31,17 +31,26 @@ def ensure_schemas_cached(tables: list, schema_cache: dict) -> tuple[dict, dict]
     (so the loop can tell the LLM exactly what it just learned).
     """
     newly_fetched = {}
+    failed_tables = []
+    
     for table in tables:
         if table not in schema_cache:
             result = get_schema(table)
-            if result["status"]=="success":
-                schema_cache[table]=result["schema"]
-                newly_fetched[table]=result["schema"]
+            if result["status"] == "success":
+                schema_cache[table] = result["schema"]
+                newly_fetched[table] = result["schema"]
             else:
-                # schema fetch itself failed — surface this clearly
-                newly_fetched[table]={"error":result["error"]}
+                failed_tables.append(table)
     
-    return schema_cache,newly_fetched
+    # raise immediately if any schema fetch failed
+    # don't let the loop continue with missing schema
+    if failed_tables:
+        raise ConnectionError(
+            f"Database connection failed for tables: {failed_tables}. "
+            f"Error: {result.get('error_message', 'unknown')}"
+        )
+    
+    return schema_cache, newly_fetched
 
 
 def format_schema_for_llm(schema_cache: dict) -> str:

@@ -39,6 +39,10 @@ Rules you must follow without exception:
    INCORRECT: WHERE order_status = "Returned".
 8. If the question clearly requires multiple tables, use action "get_schema_all" 
    instead of fetching each table one by one. This saves turns.
+9. When calculating rates or percentages, NEVER filter the dataset before 
+   counting — always compute numerator and denominator from the full dataset.
+   CORRECT:   COUNT(*) FILTER (WHERE status = 'Returned') / COUNT(*) as rate
+   INCORRECT: WHERE status = 'Returned' ... COUNT(*) / total as rate
 
 
 You must ALWAYS respond with valid JSON in exactly this format, nothing else:

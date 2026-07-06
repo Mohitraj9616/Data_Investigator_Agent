@@ -47,7 +47,17 @@ def agent_loop(user_question: str, max_retries: int = 5) ->dict:
 
         print(f"Action : {action} ")
         print(f"Reason : {reasoning} ")
+        
+        #------------ Database-connection-check
 
+        try:
+            schema_cache, newly_fetched = get_all_schemas(schema_cache)
+        except ConnectionError as e:
+            return {
+                "status": "error",
+                "reason": str(e),
+                "conversation": messages
+            }
 
         # ─---------------- ACT ─────────────────────────────────────────────────
 
@@ -59,7 +69,8 @@ def agent_loop(user_question: str, max_retries: int = 5) ->dict:
                 "conversation" : messages,
             }
         
-        
+
+
         # ------------ get Schema --------------------------------------
         elif action == 'get_schema':
             table = llm_response.get("table_name")
