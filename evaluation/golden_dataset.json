@@ -1,0 +1,108 @@
+[
+    {
+      "question": "Which product category had the highest return rate in 2024?",
+      "expected_answer": "Fashion",
+      "expected_key_values": {
+        "category": "Fashion",
+        "return_rate_approx": 0.16
+      },
+      "verified_sql": "SELECT p.category, COUNT(*) FILTER (WHERE f.order_status = 'Returned')::float / COUNT(*) as return_rate FROM fact_sales f JOIN dim_products p ON f.product_id = p.product_id JOIN dim_date d ON f.date_id = d.date_id WHERE d.year = 2024 GROUP BY p.category ORDER BY return_rate DESC LIMIT 1",
+      "notes": "Fashion return rate ~16%, highest across all categories"
+    },
+    {
+      "question": "Which city tier has the highest Cash on Delivery usage?",
+      "expected_answer": "City tier 2",
+      "expected_key_values": {
+        "city_tier": 2,
+        "cod_count": 15107
+      },
+      "verified_sql": "SELECT dc.city_tier, COUNT(*) as cod_count FROM fact_sales fs JOIN dim_customers dc ON fs.customer_id = dc.customer_id WHERE fs.payment_method = 'Cash on Delivery' GROUP BY dc.city_tier ORDER BY cod_count DESC LIMIT 1",
+      "notes": "Tier 2 cities have highest COD usage"
+    },
+    {
+      "question": "What was the average delivery delay during Diwali Sale 2025?",
+      "expected_answer": "1.21 days",
+      "expected_key_values": {
+        "avg_delay_during_sale": 1.21
+      },
+      "verified_sql": "SELECT AVG(actual_delivery_days - promised_delivery_days) FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE d.festival_name = 'Diwali Sale' AND d.year = 2025",
+      "notes": "Compare against non-festival baseline for complete answer"
+    },
+    {
+      "question": "Which seller had the highest total revenue from delivered orders?",
+      "expected_answer": "NextGen Retail 10",
+      "expected_key_values": {
+        "seller_name": "NextGen Retail 10",
+        "revenue": 17287112.58
+      },
+      "verified_sql": "SELECT s.seller_name, SUM(f.line_total) as revenue FROM fact_sales f JOIN dim_sellers s ON f.seller_id = s.seller_id WHERE f.order_status = 'Delivered' GROUP BY s.seller_name ORDER BY revenue DESC LIMIT 1",
+      "notes": "Top seller by delivered revenue"
+    },
+    {
+      "question": "What is the most popular payment method for male customers?",
+      "expected_answer": "UPI",
+      "expected_key_values": {
+        "gender": "M",
+        "payment_method": "UPI",
+        "count": 41695
+      },
+      "verified_sql": "SELECT c.gender, f.payment_method, COUNT(*) as count FROM fact_sales f JOIN dim_customers c ON f.customer_id = c.customer_id GROUP BY c.gender, f.payment_method ORDER BY c.gender, count DESC",
+      "notes": "UPI dominates for both genders, more pronounced for males"
+    },
+    {
+      "question": "What is the total revenue during festival sales vs non-festival periods?",
+      "expected_answer": "Non-festival revenue is higher at 906 million vs festival revenue of 190 million, but festival periods drive concentrated demand",
+      "expected_key_values": {
+        "festival_revenue": 190605553.61,
+        "non_festival_revenue": 906322237.86
+      },
+      "verified_sql": "SELECT d.is_festival_sale, SUM(f.line_total) as revenue FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE f.order_status = 'Delivered' GROUP BY d.is_festival_sale",
+      "notes": "Non-festival higher in absolute terms because there are more non-festival days"
+    },
+    {
+      "question": "Which are the top 3 brands by units sold?",
+      "expected_answer": "Puma, Nivea and Tata",
+      "expected_key_values": {
+        "rank_1": "Puma",
+        "rank_1_units": 12395,
+        "rank_2": "Nivea",
+        "rank_2_units": 9048,
+        "rank_3": "Tata",
+        "rank_3_units": 8919
+      },
+      "verified_sql": "SELECT p.brand, SUM(f.quantity) as units_sold FROM fact_sales f JOIN dim_products p ON f.product_id = p.product_id WHERE f.order_status = 'Delivered' GROUP BY p.brand ORDER BY units_sold DESC LIMIT 3",
+      "notes": "Puma leads significantly, Nivea and Tata close behind"
+    },
+    {
+      "question": "What is the average order value on weekends vs weekdays?",
+      "expected_answer": "Weekend average is slightly higher at 6365 vs weekday average of 6353",
+      "expected_key_values": {
+        "weekend_avg": 6365.05,
+        "weekday_avg": 6353.24
+      },
+      "verified_sql": "SELECT d.is_weekend, AVG(f.line_total) as avg_order_value FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id GROUP BY d.is_weekend",
+      "notes": "Minimal difference between weekend and weekday order values"
+    },
+    {
+      "question": "Which customer segment has the highest average spend per order?",
+      "expected_answer": "Regular customers have the highest average spend at 6490",
+      "expected_key_values": {
+        "segment": "Regular",
+        "avg_spend": 6490.68
+      },
+      "verified_sql": "SELECT c.customer_segment, AVG(f.line_total) as avg_spend FROM fact_sales f JOIN dim_customers c ON f.customer_id = c.customer_id WHERE f.order_status = 'Delivered' GROUP BY c.customer_segment ORDER BY avg_spend DESC",
+      "notes": "Regular customers spend more per order than Plus or Premium segments"
+    },
+    {
+      "question": "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?",
+      "expected_answer": "Big Billion Days generated 59 million from 11282 orders vs 41 million from 4043 orders in a normal September week",
+      "expected_key_values": {
+        "bbd_revenue": 59048136.90,
+        "bbd_orders": 11282,
+        "normal_week_revenue": 41789871.28,
+        "normal_week_orders": 4043
+      },
+      "verified_sql": "SELECT d.festival_name, SUM(f.line_total) as revenue, COUNT(DISTINCT f.order_id) as orders FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE f.order_status = 'Delivered' AND (d.festival_name = 'Big Billion Days' OR (d.is_festival_sale = false AND d.year = 2024 AND d.month = 9)) GROUP BY d.festival_name",
+      "notes": "BBD drives 41% more revenue than a comparable normal week"
+    }
+  ]

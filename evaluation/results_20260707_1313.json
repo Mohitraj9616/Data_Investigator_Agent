@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-07-07T13:13:15.823036",
+  "accuracy": 0.0,
+  "passed": 0,
+  "total": 10,
+  "avg_turns": 0.0,
+  "failed_questions": [
+    "Which product category had the highest return rate in 2024?",
+    "Which city tier has the highest Cash on Delivery usage?",
+    "What was the average delivery delay during Diwali Sale 2025?",
+    "Which seller had the highest total revenue from delivered orders?",
+    "What is the most popular payment method for male customers?",
+    "What is the total revenue during festival sales vs non-festival periods?",
+    "Which are the top 3 brands by units sold?",
+    "What is the average order value on weekends vs weekdays?",
+    "Which customer segment has the highest average spend per order?",
+    "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?"
+  ],
+  "results": [
+    {
+      "question": "Which product category had the highest return rate in 2024?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "Which city tier has the highest Cash on Delivery usage?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "What was the average delivery delay during Diwali Sale 2025?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "Which seller had the highest total revenue from delivered orders?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "What is the most popular payment method for male customers?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "What is the total revenue during festival sales vs non-festival periods?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "Which are the top 3 brands by units sold?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "What is the average order value on weekends vs weekdays?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "Which customer segment has the highest average spend per order?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    },
+    {
+      "question": "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "HTTPConnectionPool(host='3.6.91.181', port=8000): Max retries exceeded with url: /agent/query (Caused by NewConnectionError(\"HTTPConnection(host='3.6.91.181', port=8000): Failed to establish a new connection: [Errno 61] Connection refused\"))",
+      "turns_taken": null
+    }
+  ]
+}

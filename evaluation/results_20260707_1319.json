@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-07-07T13:19:22.507566",
+  "accuracy": 40.0,
+  "passed": 4,
+  "total": 10,
+  "avg_turns": 2.75,
+  "failed_questions": [
+    "What was the average delivery delay during Diwali Sale 2025?",
+    "Which seller had the highest total revenue from delivered orders?",
+    "What is the most popular payment method for male customers?",
+    "What is the total revenue during festival sales vs non-festival periods?",
+    "Which are the top 3 brands by units sold?",
+    "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?"
+  ],
+  "results": [
+    {
+      "question": "Which product category had the highest return rate in 2024?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "{'category': 'Fashion', 'returned_count': 4364, 'total_count': 27417, 'return_rate': 0.15917131706605392}",
+      "expected_answer": "Fashion",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which city tier has the highest Cash on Delivery usage?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "{\"city_tier\": 3, \"cod_count\": 6751, \"total_count\": 30805, \"cod_usage_rate\": 0.2191527349456257}",
+      "expected_answer": "City tier 2",
+      "turns_taken": 2
+    },
+    {
+      "question": "What was the average delivery delay during Diwali Sale 2025?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "1.709179528838343",
+      "expected_answer": "1.21 days",
+      "turns_taken": 4
+    },
+    {
+      "question": "Which seller had the highest total revenue from delivered orders?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "{\"seller_id\": 7010, \"total_revenue\": 17287112.58}",
+      "expected_answer": "NextGen Retail 10",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the most popular payment method for male customers?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "unknown",
+      "turns_taken": null
+    },
+    {
+      "question": "What is the total revenue during festival sales vs non-festival periods?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "{'festival_revenue': 221248636.46, 'non_festival_revenue': 1057397212.68}",
+      "expected_answer": "Non-festival revenue is higher at 906 million vs festival revenue of 190 million, but festival periods drive concentrated demand",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which are the top 3 brands by units sold?",
+      "passed": false,
+      "status": "agent_failed",
+      "reason": "Expecting value: line 1 column 1 (char 0)",
+      "turns_taken": null
+    },
+    {
+      "question": "What is the average order value on weekends vs weekdays?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "{'weekdays': 6353.24, 'weekends': 6365.05}",
+      "expected_answer": "Weekend average is slightly higher at 6365 vs weekday average of 6353",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which customer segment has the highest average spend per order?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "{\"customer_segment\": \"Regular\", \"average_spend_per_order\": 6432.24}",
+      "expected_answer": "Regular customers have the highest average spend at 6490",
+      "turns_taken": 2
+    },
+    {
+      "question": "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "{'Big Billion Days 2024 Revenue': 34537948.29, 'Normal Week September 2024 Revenue': 11782386.44}",
+      "expected_answer": "Big Billion Days generated 59 million from 11282 orders vs 41 million from 4043 orders in a normal September week",
+      "turns_taken": 6
+    }
+  ]
+}
