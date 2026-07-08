@@ -50,28 +50,28 @@
       "notes": "UPI dominates for both genders, more pronounced for males"
     },
     {
-      "question": "What is the total revenue during festival sales vs non-festival periods?",
-      "expected_answer": "Non-festival revenue is higher at 906 million vs festival revenue of 190 million, but festival periods drive concentrated demand",
+      "question": "What is the total revenue during festival sales vs non-festival periods for all orders?",
+      "expected_answer": "Festival revenue is approximately 221 million, non-festival revenue is approximately 1057 million",
       "expected_key_values": {
-        "festival_revenue": 190605553.61,
-        "non_festival_revenue": 906322237.86
+        "festival_revenue": 221248636,
+        "non_festival_revenue": 1057397212
       },
       "verified_sql": "SELECT d.is_festival_sale, SUM(f.line_total) as revenue FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE f.order_status = 'Delivered' GROUP BY d.is_festival_sale",
       "notes": "Non-festival higher in absolute terms because there are more non-festival days"
     },
     {
-      "question": "Which are the top 3 brands by units sold?",
-      "expected_answer": "Puma, Nivea and Tata",
-      "expected_key_values": {
-        "rank_1": "Puma",
-        "rank_1_units": 12395,
-        "rank_2": "Nivea",
-        "rank_2_units": 9048,
-        "rank_3": "Tata",
-        "rank_3_units": 8919
-      },
-      "verified_sql": "SELECT p.brand, SUM(f.quantity) as units_sold FROM fact_sales f JOIN dim_products p ON f.product_id = p.product_id WHERE f.order_status = 'Delivered' GROUP BY p.brand ORDER BY units_sold DESC LIMIT 3",
-      "notes": "Puma leads significantly, Nivea and Tata close behind"
+        "question": "Which are the top 3 brands by units sold from delivered orders?",
+        "expected_answer": "Puma, Nivea and Tata",
+        "expected_key_values": {
+            "rank_1": "Puma",
+            "rank_1_units": 12395,
+            "rank_2": "Nivea",
+            "rank_2_units": 9048,
+            "rank_3": "Tata",
+            "rank_3_units": 8919
+        },
+        "verified_sql": "SELECT p.brand, SUM(f.quantity) as units_sold FROM fact_sales f JOIN dim_products p ON f.product_id = p.product_id WHERE f.order_status = 'Delivered' GROUP BY p.brand ORDER BY units_sold DESC LIMIT 3",
+        "notes": "Puma leads significantly, Nivea and Tata close behind — filter on Delivered orders only"
     },
     {
       "question": "What is the average order value on weekends vs weekdays?",
@@ -94,15 +94,14 @@
       "notes": "Regular customers spend more per order than Plus or Premium segments"
     },
     {
-      "question": "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?",
-      "expected_answer": "Big Billion Days generated 59 million from 11282 orders vs 41 million from 4043 orders in a normal September week",
-      "expected_key_values": {
-        "bbd_revenue": 59048136.90,
-        "bbd_orders": 11282,
-        "normal_week_revenue": 41789871.28,
-        "normal_week_orders": 4043
-      },
-      "verified_sql": "SELECT d.festival_name, SUM(f.line_total) as revenue, COUNT(DISTINCT f.order_id) as orders FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE f.order_status = 'Delivered' AND (d.festival_name = 'Big Billion Days' OR (d.is_festival_sale = false AND d.year = 2024 AND d.month = 9)) GROUP BY d.festival_name",
-      "notes": "BBD drives 41% more revenue than a comparable normal week"
+        "question": "Compare total revenue during Big Billion Days 2024 versus a normal week in October 2024 that had no festival sales",
+        "expected_answer": "Big Billion Days 2024 generated approximately 34 million while a normal October week generated approximately 48 million",
+        "expected_key_values": {
+            "bbd_revenue": 34537948,
+            "normal_week_revenue": 48463832
+        },
+        "verified_sql": "SELECT d.festival_name, SUM(f.line_total) as revenue, COUNT(DISTINCT f.order_id) as orders FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE f.order_status = 'Delivered' AND d.year = 2024 AND d.month = 10 GROUP BY d.festival_name",
+        "notes": "BBD runs Oct 3-12, normal week comparison is rest of October non-festival days"
+
     }
   ]

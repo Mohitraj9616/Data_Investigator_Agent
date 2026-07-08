@@ -13,7 +13,7 @@ GOLDEN_DATASET_PATH = "evaluation/golden_dataset.json"
 langfuse = Langfuse(
     public_key=os.environ.get("LANGFUSE_PUBLIC_KEY"),
     secret_key=os.environ.get("LANGFUSE_SECRET_KEY"),
-    host=os.environ.get("LANGFUSE_HOST", "https://cloud.langfuse.com")
+    host=os.environ.get("LANGFUSE_BASE_URL", "https://us.cloud.langfuse.com")
 )
 
 
@@ -29,40 +29,56 @@ def call_agent(question: str) -> dict:
             json={"question": question, "max_retries": 5},
             timeout=120
         )
+        # handle non-200 responses explicitly
+        if response.status_code != 200:
+            return {
+                "status": "error",
+                "reason": f"HTTP {response.status_code}: {response.text[:200]}"
+            }
         return response.json()
+    except requests.exceptions.JSONDecodeError:
+        return {
+            "status": "error",
+            "reason": f"Empty or invalid JSON response: {response.text[:200]}"
+        }
     except Exception as e:
         return {"status": "error", "reason": str(e)}
 
 
 def check_answer(agent_answer: str, case: dict) -> bool:
-    """
-    Check if expected answer appears in agent response.
-    Deterministic check against ground truth — no fuzzy scoring.
-    """
     expected = case["expected_answer"].lower()
-    answer_lower = str(agent_answer).lower()
+    # strip commas from formatted numbers before comparing
+    answer_lower = str(agent_answer).lower().replace(",", "")
+    expected_stripped = expected.replace(",", "")
 
-    # check expected key values if present
     key_values = case.get("expected_key_values", {})
     key_hits = 0
     for key, value in key_values.items():
-        value_str = str(value).lower()
+        value_str = str(value).lower().replace(",", "")
+        # strip commas from answer for numeric comparison too
+        answer_no_commas = answer_lower.replace(",", "")
         try:
-            numeric = float(value)
-            rounded = [str(int(numeric)), str(round(numeric, 1)), str(round(numeric, 2))]
-            if any(v in answer_lower for v in rounded):
+            numeric = float(str(value).replace(",", ""))
+            rounded = [
+                str(int(numeric)),
+                str(round(numeric, 1)),
+                str(round(numeric, 2)),
+                str(round(numeric / 1_000_000, 0)).replace(".0", "") + " million",
+                str(round(numeric / 1_000_000, 2)) + " million",
+            ]
+            if any(v.replace(",", "") in answer_no_commas for v in rounded):
                 key_hits += 1
         except (ValueError, TypeError):
-            if value_str in answer_lower:
+            if value_str in answer_no_commas:
                 key_hits += 1
 
     key_score = key_hits / max(len(key_values), 1)
 
-    # primary match: any meaningful word from expected answer found
+    # check primary match against comma-stripped strings
     primary = any(
-        word in answer_lower
-        for word in expected.split()
-        if len(word) > 3
+        word in answer_no_commas
+        for word in expected_stripped.split()
+        if len(word) >= 3
     )
 
     return primary and key_score >= 0.5

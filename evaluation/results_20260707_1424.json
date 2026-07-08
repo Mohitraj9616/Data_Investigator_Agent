@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-07-07T14:24:31.074336",
+  "accuracy": 60.0,
+  "passed": 6,
+  "total": 10,
+  "avg_turns": 2.3,
+  "failed_questions": [
+    "What is the most popular payment method for male customers?",
+    "What is the total revenue during festival sales vs non-festival periods?",
+    "Which are the top 3 brands by units sold?",
+    "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?"
+  ],
+  "results": [
+    {
+      "question": "Which product category had the highest return rate in 2024?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The product category with the highest return rate in 2024 was 'Fashion' with a return rate of approximately 15.92%.",
+      "expected_answer": "Fashion",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which city tier has the highest Cash on Delivery usage?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "City tier 2 has the highest Cash on Delivery usage with 15,107 orders.",
+      "expected_answer": "City tier 2",
+      "turns_taken": 2
+    },
+    {
+      "question": "What was the average delivery delay during Diwali Sale 2025?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The average delivery delay during the Diwali Sale 2025 was approximately 1.22 days.",
+      "expected_answer": "1.21 days",
+      "turns_taken": 4
+    },
+    {
+      "question": "Which seller had the highest total revenue from delivered orders?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The seller with the highest total revenue from delivered orders is NextGen Retail 10, with a total revenue of 17,287,112.58.",
+      "expected_answer": "NextGen Retail 10",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the most popular payment method for male customers?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "The most popular payment method for male customers is UPI, with 41,695 transactions.",
+      "expected_answer": "UPI",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the total revenue during festival sales vs non-festival periods?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "The total revenue during festival sales is approximately 221.25 million, while the revenue during non-festival periods is approximately 1.06 billion.",
+      "expected_answer": "Non-festival revenue is higher at 906 million vs festival revenue of 190 million, but festival periods drive concentrated demand",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which are the top 3 brands by units sold?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "The top 3 brands by units sold are Puma with 16,585 units, Levis with 10,411 units, and Titan with 10,383 units.",
+      "expected_answer": "Puma, Nivea and Tata",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the average order value on weekends vs weekdays?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The average order value on weekdays is approximately 6353.24, while on weekends it is approximately 6365.05. This indicates that the average order value is slightly higher on weekends compared to week",
+      "expected_answer": "Weekend average is slightly higher at 6365 vs weekday average of 6353",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which customer segment has the highest average spend per order?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The customer segment with the highest average spend per order is the 'Regular' segment, with an average spend of approximately 6432.24 per order.",
+      "expected_answer": "Regular customers have the highest average spend at 6490",
+      "turns_taken": 2
+    },
+    {
+      "question": "How does Big Billion Days 2024 revenue compare to a normal September 2024 week?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "The revenue for Big Billion Days 2024 could not be separately identified from the data provided, as the entire September 2024 revenue was reported without distinguishing festival days. Therefore, the ",
+      "expected_answer": "Big Billion Days generated 59 million from 11282 orders vs 41 million from 4043 orders in a normal September week",
+      "turns_taken": 3
+    }
+  ]
+}

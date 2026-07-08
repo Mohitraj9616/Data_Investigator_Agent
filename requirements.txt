@@ -10,7 +10,6 @@ backoff==2.2.1
 certifi==2026.6.17
 charset-normalizer==3.4.8
 click==8.4.2
--e git+https://github.com/Mohitraj9616/Data_Investigator_Agent.git@db69afb1e801de37f61873906711a110b4a49756#egg=data_investigator_agent
 diskcache==5.6.3
 distro==1.9.0
 docstring_parser==0.18.0
@@ -29,7 +28,6 @@ Jinja2==3.1.6
 jiter==0.14.0
 jsonpatch==1.33
 jsonpointer==3.1.1
-langfuse==4.13.0
 markdown-it-py==4.2.0
 MarkupSafe==3.0.3
 mdurl==0.1.2
@@ -46,7 +44,7 @@ opentelemetry-sdk==1.43.0
 opentelemetry-semantic-conventions==0.64b0
 orjson==3.11.9
 ormsgpack==1.12.2
-packaging==26.2
+packaging>=23.2,<25
 pandas==3.0.3
 propcache==0.5.2
 protobuf==7.35.1
@@ -76,7 +74,9 @@ urllib3==2.7.0
 uuid_utils==0.16.2
 uvicorn==0.50.0
 websockets==15.0.1
-wrapt==2.2.2
+#wrapt==2.2.2 
+wrapt>=1.14,<2.0
 xxhash==3.8.1
 yarl==1.24.2
 zstandard==0.25.0
+langfuse==2.60.3
