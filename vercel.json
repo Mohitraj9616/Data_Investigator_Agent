@@ -1,7 +1,0 @@
-
-{
-  "buildCommand": "cd ui && npm install && npm run build",
-  "outputDirectory": "ui/dist",
-  "framework": null,
-  "installCommand": "cd ui && npm install"
-}
