@@ -7,16 +7,14 @@ import uvicorn
 
 app = FastAPI(title="Data Investigator Agent")
 
-
+# "https://card-youth-special-notices.trycloudflare.com",
+# "https://*.vercel.app",  # allows all your Vercel deployments
 # CORS — allows browser requests from any origin
 # tighten this to your Vercel URL once deployed
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://card-youth-special-notices.trycloudflare.com",
-        "https://*.vercel.app",  # allows all your Vercel deployments
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],         
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
