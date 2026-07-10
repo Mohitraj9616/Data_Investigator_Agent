@@ -10,14 +10,16 @@ app = FastAPI(title="Data Investigator Agent")
 
 # CORS — allows browser requests from any origin
 # tighten this to your Vercel URL once deployed
-app.add_middleware (
+app.add_middleware(
     CORSMiddleware,
-    allow_origins = ["*"], # replace with ["https://your-app.vercel.app"] after deploy
-    allow_credentials = True,
-    allow_methods = ["*"],
-    allow_headers = ["*"],
-    )
-
+    allow_origins=[
+        "https://card-youth-special-notices.trycloudflare.com",
+        "https://*.vercel.app",  # allows all your Vercel deployments
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class QueryRequest(BaseModel):
     question: str
