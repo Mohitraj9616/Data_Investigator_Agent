@@ -103,5 +103,48 @@
         "verified_sql": "SELECT d.festival_name, SUM(f.line_total) as revenue, COUNT(DISTINCT f.order_id) as orders FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE f.order_status = 'Delivered' AND d.year = 2024 AND d.month = 10 GROUP BY d.festival_name",
         "notes": "BBD runs Oct 3-12, normal week comparison is rest of October non-festival days"
 
+    },
+    {
+        "question": "What is the total number of orders placed in 2024?",
+        "expected_answer": "64014 orders were placed in 2024",
+        "expected_key_values": {
+            "order_count": 64014
+        },
+        "verified_sql": "SELECT COUNT(DISTINCT order_id) FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE d.year = 2024",
+        "notes": "Total distinct orders in 2024"
+    },
+    {
+        "question": "Which state has the most customers?",
+        "expected_answer": "Maharashtra",
+        "expected_key_values": {"state": "Maharashtra"},
+        "verified_sql": "SELECT state, COUNT(*) as customer_count FROM dim_customers GROUP BY state ORDER BY customer_count DESC LIMIT 1",
+        "notes": "Simple dimension query"
+    },
+    {
+        "question": "What is the average rating given by customers for delivered orders?",
+        "expected_answer": "3.84",
+        "expected_key_values": {
+            "avg_rating": 3.84
+        },
+        "verified_sql": "SELECT AVG(rating) FROM fact_sales WHERE order_status = 'Delivered' AND rating IS NOT NULL",
+        "notes": "Average with null filter"
+    },
+    {
+        "question": "Which month in 2024 had the highest number of orders?",
+        "expected_answer": "October",
+        "expected_key_values": {
+            "month": "October"
+        },
+        "verified_sql": "SELECT d.month_name, COUNT(f.order_item_id) AS order_count FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE d.year = 2024 GROUP BY d.month_name ORDER BY order_count DESC LIMIT 1",
+        "notes": "October has Big Billion Days — highest order volume month"
+    },
+    {
+        "question": "What percentage of orders were returned in 2025?",
+        "expected_answer": "8.42 percent",
+        "expected_key_values": {
+            "return_percentage": 8.42
+        },
+        "verified_sql": "SELECT COUNT(*) FILTER (WHERE order_status = 'Returned')::float / COUNT(*) * 100 FROM fact_sales f JOIN dim_date d ON f.date_id = d.date_id WHERE d.year = 2025",
+        "notes": "Return rate percentage"
     }
   ]

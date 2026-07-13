@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-07-13T12:13:26.206188",
+  "accuracy": 86.66666666666667,
+  "passed": 13,
+  "total": 15,
+  "avg_turns": 2.2,
+  "failed_questions": [
+    "What is the average rating given by customers for delivered orders?",
+    "What percentage of orders were returned in 2025?"
+  ],
+  "results": [
+    {
+      "question": "Which product category had the highest return rate in 2024?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The product category with the highest return rate in 2024 was 'Fashion' with a return rate of approximately 15.92%.",
+      "expected_answer": "Fashion",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which city tier has the highest Cash on Delivery usage?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "City tier 2 has the highest Cash on Delivery usage with 15,107 occurrences.",
+      "expected_answer": "City tier 2",
+      "turns_taken": 2
+    },
+    {
+      "question": "What was the average delivery delay during Diwali Sale 2025?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The average delivery delay during the Diwali Sale 2025 was approximately 1.22 days.",
+      "expected_answer": "1.21 days",
+      "turns_taken": 4
+    },
+    {
+      "question": "Which seller had the highest total revenue from delivered orders?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The seller with the highest total revenue from delivered orders is NextGen Retail 10, with a total revenue of 17,287,112.58.",
+      "expected_answer": "NextGen Retail 10",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the most popular payment method for male customers?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The most popular payment method for male customers is UPI, with 41,695 transactions.",
+      "expected_answer": "UPI",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the total revenue during festival sales vs non-festival periods for all orders?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The total revenue during festival sales is approximately 221.25 million, while the total revenue during non-festival periods is approximately 1.06 billion.",
+      "expected_answer": "Festival revenue is approximately 221 million, non-festival revenue is approximately 1057 million",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which are the top 3 brands by units sold from delivered orders?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The top 3 brands by units sold from delivered orders are: 1) Puma with 12,395 units sold, 2) Nivea with 9,048 units sold, and 3) Tata with 8,919 units sold.",
+      "expected_answer": "Puma, Nivea and Tata",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the average order value on weekends vs weekdays?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The average order value on weekdays is approximately 6,353.24, while on weekends it is approximately 6,365.05.",
+      "expected_answer": "Weekend average is slightly higher at 6365 vs weekday average of 6353",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which customer segment has the highest average spend per order?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The customer segment with the highest average spend per order is the 'Regular' segment, with an average spend of approximately 6432.24 per order.",
+      "expected_answer": "Regular customers have the highest average spend at 6490",
+      "turns_taken": 2
+    },
+    {
+      "question": "Compare total revenue during Big Billion Days 2024 versus a normal week in October 2024 that had no festival sales",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "During October 2024, the total revenue during the Big Billion Days festival was approximately 34,537,948.29, while the total revenue during a normal week with no festival sales was approximately 33,47",
+      "expected_answer": "Big Billion Days 2024 generated approximately 34 million while a normal October week generated approximately 48 million",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the total number of orders placed in 2024?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The total number of orders placed in 2024 is 64,014.",
+      "expected_answer": "64014 orders were placed in 2024",
+      "turns_taken": 3
+    },
+    {
+      "question": "Which state has the most customers?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The state with the most customers is Maharashtra, with a total of 218 customers.",
+      "expected_answer": "Maharashtra",
+      "turns_taken": 2
+    },
+    {
+      "question": "What is the average rating given by customers for delivered orders?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "The average rating given by customers for delivered orders is approximately 3.84.",
+      "expected_answer": "4",
+      "turns_taken": 2
+    },
+    {
+      "question": "Which month in 2024 had the highest number of orders?",
+      "passed": true,
+      "status": "completed",
+      "agent_answer": "The month in 2024 with the highest number of orders was October, with a total of 14,737 orders.",
+      "expected_answer": "October",
+      "turns_taken": 2
+    },
+    {
+      "question": "What percentage of orders were returned in 2025?",
+      "passed": false,
+      "status": "completed",
+      "agent_answer": "In 2025, approximately 8.42% of orders were returned.",
+      "expected_answer": "8",
+      "turns_taken": 2
+    }
+  ]
+}

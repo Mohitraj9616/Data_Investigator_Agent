@@ -47,16 +47,14 @@ def call_agent(question: str) -> dict:
 
 def check_answer(agent_answer: str, case: dict) -> bool:
     expected = case["expected_answer"].lower()
-    # strip commas from formatted numbers before comparing
-    answer_lower = str(agent_answer).lower().replace(",", "")
+    # define these at the top — before any try/except
+    answer_str = str(agent_answer).lower()
+    answer_no_commas = answer_str.replace(",", "")
     expected_stripped = expected.replace(",", "")
 
     key_values = case.get("expected_key_values", {})
     key_hits = 0
     for key, value in key_values.items():
-        value_str = str(value).lower().replace(",", "")
-        # strip commas from answer for numeric comparison too
-        answer_no_commas = answer_lower.replace(",", "")
         try:
             numeric = float(str(value).replace(",", ""))
             rounded = [
@@ -69,12 +67,11 @@ def check_answer(agent_answer: str, case: dict) -> bool:
             if any(v.replace(",", "") in answer_no_commas for v in rounded):
                 key_hits += 1
         except (ValueError, TypeError):
-            if value_str in answer_no_commas:
+            if str(value).lower().replace(",", "") in answer_no_commas:
                 key_hits += 1
 
     key_score = key_hits / max(len(key_values), 1)
 
-    # check primary match against comma-stripped strings
     primary = any(
         word in answer_no_commas
         for word in expected_stripped.split()

@@ -309,6 +309,11 @@ if __name__ == "__main__":
         "Which product category had the highest return rate in 2024?",
         "Which city tier has the highest Cash on Delivery usage?",
         "Did average delivery delay get worse during Diwali Sale 2025?",
+        "What is the total number of orders placed in 2024",
+        "Which state has the most customers?",
+        "What is the average rating given by customers for delivered orders?",
+        "Which month in 2024 had the highest number of orders?",
+        "What percentage of orders were returned in 2025?"
     ]
     for q in questions:
         result = agent_loop(q, max_retries=5)
